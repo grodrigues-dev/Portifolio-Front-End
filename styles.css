@@ -230,8 +230,42 @@ header button{
     border: none; 
     outline: none;
     margin-bottom: 10px;
-    /* padding-bottom: 10px; */
 }
 
 
+main{
+    height: 80%;
+    width: 100%;
+}
 
+.box01{
+    margin: 25px;
+    color: #fff; 
+    font-size: 18px;
+    display: flex; 
+    flex-direction: column
+}
+
+.titulo{
+    display: flex;
+    font-size: 30px;
+}
+
+span>h1:nth-child(1){
+    padding-right: 10px;    
+}
+
+#future{
+    color:#dec71b
+
+}
+
+.explore{
+    margin-top: 30px;
+    width: 150px;
+    height: 35px;
+    color: #fff; 
+    background: #dec71b; 
+    border: none; 
+    border-radius: 5px
+}
