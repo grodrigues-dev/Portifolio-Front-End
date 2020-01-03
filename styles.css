@@ -192,7 +192,8 @@
     background-image: url('./images/black-train.jpg'); 
     background-size: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column; 
+    justify-content: space-between
 }
 
 .icon{
@@ -234,14 +235,14 @@ header button{
 
 
 main{
-    height: 80%;
+    height: 60%;
     width: 100%;
     display: flex; 
     flex-direction: column
 }
 
 .box01{
-    margin: 25px;
+    margin: -80px 25px;
     color: #fff; 
     font-size: 18px;
     display: flex; 
@@ -268,11 +269,15 @@ main{
     width: 150px;
     height: 35px;
     color: #fff; 
-    background: #dec71b; 
+    background: -webkit-linear-gradient(180deg, rgb(228, 255, 100, 0.3), rgb(79, 95, 140,0.3));
+    background: linear-gradient(180deg, rgb(228, 255, 10, 0.5), rgb(79, 95, 14, 0.5));
     border: none; 
     border-radius: 5px; 
-    cursor: pointer; 
     outline-color: #fff;
+}
+
+.explore:hover{
+  cursor: pointer;
 }
 
 .box02{
@@ -305,8 +310,6 @@ main{
   border-bottom: 1px solid #fff  
 }
 
-
-
 .box02 span>h1:nth-child(1){
   padding-right: 10px; 
   color: #dec71b; 
@@ -322,8 +325,46 @@ main{
   border-color: #dec71b; 
   cursor: pointer; 
   outline-color: #dec71b
-  
 }
 
+
+footer{
+  display: flex; 
+  justify-content: space-between;
+  height: 60px;
+}
+
+footer ul {
+  list-style: none;
+  box-sizing: border-box; 
+  margin: 0; 
+  /* padding-top: 20px;  */
+  height: 100%;;
+}
+
+footer ul li{
+  display: inline;
+}
+
+footer  button{
+  height: 100%;
+  color: #fff; 
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-footer:hover{
+  background: rgba(222, 199, 27, 0.8)
+}
+
+.pages{
+  font-size: 25px; 
+  padding: 20px;
+}
+
+.scroll:hover{
+  color: #dec71b
+}
 
 
