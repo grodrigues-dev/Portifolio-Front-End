@@ -194,9 +194,17 @@
     justify-content: space-between
 }
 
+button{
+  cursor: pointer;
+  background: none
+}
+
+ul {
+  list-style: none
+}
+
 .icon{
     height: 40px;
-    width: auto; 
     padding: 18px
 }
 .lupa{
@@ -205,7 +213,6 @@
     cursor: pointer;
 }
 header{
-    width: 100%;
     height: 10%;
     display: flex;
     justify-content: space-between; 
@@ -218,7 +225,6 @@ header ul {
 }
 
 header ul li {
-    list-style: none;
     padding: 18px;
     color: #fff;
     font-weight: bold;
@@ -230,31 +236,32 @@ header ul li:hover{
 }
 
 header button{
-    background: none; 
     border: none; 
     outline: none;
     margin-bottom: 10px;
 }
 
 main{
-    height: 60%;
+    height: 80%;
     width: 100%;
     display: flex; 
-    flex-direction: column
+    flex-direction: column; 
+    align-items: center
 }
 
 .box01{
-    margin: -80px 25px;
     color: #fff; 
     font-size: 18px;
     display: flex; 
     flex-direction: column; 
-    
+    height: 50%;
+    width: 95%;
+    padding-top: 20px;
 }
 
 .titulo{
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .box01 span>h1:nth-child(1){
@@ -272,20 +279,28 @@ main{
     height: 35px;
     color: #fff; 
     background: -webkit-linear-gradient(180deg, rgb(228, 255, 100, 0.3), rgb(79, 95, 140,0.3));
-    background: linear-gradient(180deg, rgb(228, 255, 10, 0.5), rgb(79, 95, 14, 0.5));
+    background: linear-gradient(180deg, rgb(228, 255, 10, 0.5), rgb(79, 95, 14, 0.5)); 
     border: none; 
     border-radius: 5px; 
     outline-color: #fff;
+    cursor: pointer;
 }
 
+.explore:hover{
+  opacity: 0.9; 
+  transition-duration: 0.5s
+}
+
+
 .box02{
-  /* justify-content: right; */
     display: flex;
     flex-direction: column; 
     align-items: flex-end; 
-    width: 95%;
+    width: 90%;
     color: #fff; 
     font-size: 18px;
+    line-height: 60px; 
+    height: 50%;
 }
 
 .titulo02 {
@@ -295,12 +310,11 @@ main{
   opacity: 0.8;
   text-shadow: 4px 4px black;
   height: 100px;
-  /* border-bottom: #dec71b 1px solid */
 }
+
 .titulo02 h1:nth-child(1) {
   height: 70%;
   border-bottom: 1px solid #dec71b;
-  
 }
 
 .titulo02 h1:nth-child(2) {
@@ -314,17 +328,19 @@ main{
 }
 
 #read{
-  background: none;
   color: #fff;
   width: 150px;
   height: 35px;
   border-radius: 5px;
   margin-top: 30px;
   border-color: #dec71b; 
-  cursor: pointer; 
   outline-color: #dec71b
 }
 
+#read:hover{
+  background: rgba(186, 185, 177, 0.3);
+  transition-duration: 0.5s
+}
 
 footer{
   display: flex; 
@@ -333,10 +349,8 @@ footer{
 }
 
 footer ul {
-  list-style: none;
   box-sizing: border-box; 
   margin: 0; 
-  /* padding-top: 20px;  */
   height: 100%;;
 }
 
@@ -347,21 +361,20 @@ footer ul li{
 footer  button{
   height: 100%;
   color: #fff; 
-  background: none;
   border: none;
-  cursor: pointer;
 }
 
-
+.button-footer{
+  width: 100px;
+  padding: 10px;
+}
 
 .button-footer:hover{
-  background: rgba(222, 199, 27, 0.8)
-
+  background-color: rgba(222, 199, 27, 0.8); 
 }
 
 .page-list{
   margin-right: 45px; 
-
 }
 
 .pages{
@@ -369,8 +382,9 @@ footer  button{
   background: #dec71b; 
   border: none; 
   width: 85px;
+  height: 100%;
   margin-right: -5px;
- 
+  outline:none
 }
 
 .pages02{
@@ -380,11 +394,11 @@ footer  button{
 
 .pages:hover {
   opacity: 0.9;
+  border:1px solid yellow
 }
 
 .scroll:hover{
   color: #dec71b
-  
 }
 
 
