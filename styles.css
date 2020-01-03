@@ -194,6 +194,18 @@
     justify-content: space-between
 }
 
+.slide02{
+  background-image: url('./images/yellow-train.jpg'); 
+  background-size: 100%;
+
+}
+
+.slide01{
+  background-image: url('./images/black-train.jpg'); 
+  background-size: 100%;
+
+}
+
 button{
   cursor: pointer;
   background: none
