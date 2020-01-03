@@ -183,8 +183,6 @@
 /* ================================================================================================ */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-
-
 .container{
     height: 100vh;
     width: 100%;
@@ -204,6 +202,7 @@
 .lupa{
     height: 20px;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 header{
     width: 100%;
@@ -223,7 +222,11 @@ header ul li {
     padding: 18px;
     color: #fff;
     font-weight: bold;
+    cursor: pointer;
+}
 
+header ul li:hover{
+  color: #dec71b
 }
 
 header button{
@@ -232,7 +235,6 @@ header button{
     outline: none;
     margin-bottom: 10px;
 }
-
 
 main{
     height: 60%;
@@ -274,10 +276,6 @@ main{
     border: none; 
     border-radius: 5px; 
     outline-color: #fff;
-}
-
-.explore:hover{
-  cursor: pointer;
 }
 
 .box02{
@@ -354,17 +352,39 @@ footer  button{
   cursor: pointer;
 }
 
+
+
 .button-footer:hover{
   background: rgba(222, 199, 27, 0.8)
+
+}
+
+.page-list{
+  margin-right: 45px; 
+
 }
 
 .pages{
   font-size: 25px; 
-  padding: 20px;
+  background: #dec71b; 
+  border: none; 
+  width: 85px;
+  margin-right: -5px;
+ 
+}
+
+.pages02{
+  color: #dec71b; 
+  background: #fff; 
+}
+
+.pages:hover {
+  opacity: 0.9;
 }
 
 .scroll:hover{
   color: #dec71b
+  
 }
 
 
