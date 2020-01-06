@@ -197,18 +197,21 @@
 .slide02{
   background-image: url('./images/yellow-train.jpg'); 
   background-size: 100%;
+  transition-duration: 1s;
 
 }
 
 .slide01{
   background-image: url('./images/black-train.jpg'); 
   background-size: 100%;
-
+  transition-duration: 1s;
 }
+
 
 button{
   cursor: pointer;
-  background: none
+  background: none; 
+  outline: none; 
 }
 
 ul {
@@ -404,10 +407,12 @@ footer  button{
   background: #fff; 
 }
 
-.pages:hover {
-  opacity: 0.9;
-  border:1px solid yellow
+.active{
+  opacity: 0.5;
+  border: 3px solid yellow; 
+  cursor: default;
 }
+
 
 .scroll:hover{
   color: #dec71b
