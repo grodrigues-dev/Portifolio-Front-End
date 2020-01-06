@@ -4,14 +4,11 @@ function slide02() {
     let btnPrevious = document.querySelector('#btnPrevious');
     if (background.className=='container'){
         background.classList.add("slide02")
-        btnNext.classList.add("active"); 
     } else {
-        background.classList.replace("slide01", "slide02")
-        btnNext.classList.add("active"); 
-        btnPrevious.classList.remove("active")
-        
+        background.classList.replace("slide01", "slide02")        
     }   
-    
+    btnNext.classList.add("active"); 
+    btnPrevious.classList.remove("active")
 }
 
 function slide01() {
